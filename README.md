@@ -1,4 +1,5 @@
 # finance-portal
+A fresh copy of the policy portal
 
 ## Project setup
 ```
