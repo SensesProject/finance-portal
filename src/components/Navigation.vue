@@ -18,8 +18,8 @@
         <a class="transition-path-1" href="#/transition-path-1"></a>
         <a class="transition-path-2" href="#/transition-path-2"></a>
         <a class="primary-energy" href="#/primary-energy"></a>
-        <a class="land-transitions" href="#/land-transitions"></a>
-        <a class="land-affected" href="#/land-affected"></a>
+        <a class="land-use" href="#/land-use"></a>
+        <a class="extreme-events" href="#/extreme-events"></a>
         <a class="earth" href="#/earth"></a>
         <a class="end" href="#/end"></a>
       </div>
@@ -62,10 +62,10 @@ export default {
   top: 131px;
   padding: 20px;
   padding-left: 40px;
-  border: 1px solid #0bbfb0;
+  border: 1px solid #870bbf;
   border-radius: 20px;
   left: -20px;
-  color: #0bbfb0;
+  color: #870bbf;
   text-transform: uppercase;
   font-size: 12px;
 
@@ -157,12 +157,12 @@ export default {
     left: 53px;
   }
 
-  .land-transitions {
+  .land-use {
     top: 235px;
     left: 62px;
   }
 
-  .land-affected {
+  .extreme-events {
     top: 260px;
     left: 81px;
   }
@@ -209,12 +209,12 @@ export default {
     left: 53px;
   }
 
-  .land-transitions & {
+  .land-use & {
     top: 235px;
     left: 62px;
   }
 
-  .land-affected & {
+  .extreme-events & {
     top: 260px;
     left: 81px;
   }
@@ -244,7 +244,7 @@ export default {
 }
 
 .circle {
-  background: #9be8c7;
+  background: #f9dcff;
   opacity: 0.5;
   width: 40px;
   height: 40px;

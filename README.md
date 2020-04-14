@@ -1,4 +1,4 @@
-# policy-portal
+# finance-portal
 
 ## Project setup
 ```

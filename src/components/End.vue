@@ -5,7 +5,7 @@
     <div class="inner">
       <h1>
         <a href="#" target="_blank">
-        Continue on the Finance Portal. <br v-if="{mobile} === true"/>
+        Continue on the Policy Portal. <br v-if="{mobile} === true"/>
           <span class="right_arrow">→</span>
         </a>
       </h1>
@@ -56,7 +56,7 @@ export default {
   border-radius: 500px;
   width: 15px;
   height: 15px;
-  background-color: #b035c9;
+  background-color: #0bbfb0;
 }
 
 a {
@@ -72,11 +72,11 @@ a {
 
 h1 {
   font-weight: 700;
-  /* text-shadow: -1px 0 #0bbfb0, 0 1px #0bbfb0, 1px 0 #0bbfb0, 0 -1px #0bbfb0; */
+  /* text-shadow: -1px 0 #870bbf, 0 1px #870bbf, 1px 0 #870bbf, 0 -1px #870bbf; */
   color: #fff;
   font-size: 60px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #b035c9;
+  -webkit-text-stroke-color: #0bbfb0;
   line-height: 1em;
   margin-bottom: 40px;
   margin-top: 60px;
@@ -90,7 +90,7 @@ h1 {
 
 .right_arrow {
   font-weight: normal;
-  color: #b035c9;
+  color: #0bbfb0;
   font-size: 50px;
   padding-left: 30px;
   transition: padding-left 1s;

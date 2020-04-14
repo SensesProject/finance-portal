@@ -41,9 +41,9 @@ export default {
   box-shadow: 0px 4px 0px 1px #99e2c49c;
   position: fixed;
   top: 41px;
-  border: 1px solid #0bbfb0;
+  border: 1px solid #870bbf;
   border-radius: 20px;
-  color: #0bbfb0;
+  color: #870bbf;
   text-transform: uppercase;
   font-size: 12px;
   width: 100%;
@@ -164,7 +164,7 @@ export default {
 }
 
 .circle {
-  background: #9be8c7;
+  background: #f9dcff;
   opacity: 0.5;
   width: 40px;
   height: 40px;

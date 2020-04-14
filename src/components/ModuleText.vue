@@ -71,7 +71,7 @@ export default {
 .background {
   position: absolute;
   width: 100%;
-  background: #9be8c7;
+  background: #f9dcff;
   height: 60vh;
   left: 0;
   top: 20vh;
@@ -144,8 +144,8 @@ export default {
   .stocktake-1 &,
   .transition-path-1 &,
   .land-affected & {
-    color: #0bbfb0;
-    border-bottom: 1px dotted #0bbfb0;
+    color: #870bbf;
+    border-bottom: 1px dotted #870bbf;
     background: none;
   }
 }
@@ -156,7 +156,7 @@ export default {
   width: 400px;
   height: 400px;
   mix-blend-mode: multiply;
-  border: 2px solid #e6fffe;
+  border: 2px solid #f8e0fe;
   transition: background 1s;
   pointer-events: none;
   left: calc(50% - 150px);
@@ -165,7 +165,7 @@ export default {
   z-index: 1;
 
   .container:hover & {
-    background: #e6fffe;
+    background: #f8e0fe;
   }
 
   .stocktake-1 & {
@@ -398,7 +398,7 @@ export default {
     clear: both;
     float: left;
     border-radius: 10px;
-    // background: #9be8c7;
+    // background: #f9dcff;
     margin: 5px 0 0 0;
 
     .content {

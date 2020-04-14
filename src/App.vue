@@ -12,7 +12,7 @@
     <Item v-for="data in modulesData" v-bind:key="data.path + '-' + reflowTime" :data="data" :id="'to-' + data.path">
       <template v-slot:figure="props">
         <Home v-if="props.data.path === 'intro'" :mobile="isMobile"  />
-        <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" />
+        <!-- <Earth v-else-if="props.data.path === 'earth'" :ratio="props.ratio" :mobile="isMobile" /> -->
         <End v-else-if="props.data.path === 'end'" :mobile="isMobile" />
         <div v-else>
           <ModuleText :data="props.data" :ratio="props.ratio" :mobile="isMobile"/>
@@ -101,7 +101,7 @@ export default {
         .then((myJson) => {
           console.log(myJson);
         });
-      
+
     }
   },
   mounted: function() {

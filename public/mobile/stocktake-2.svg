@@ -2,14 +2,14 @@
 <svg width="320px" height="350px" viewBox="0 0 320 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="stocktake-2-MOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Group-24" transform="translate(15.000000, 41.000000)">
-            <polyline id="Path-4" stroke="#0BBFB0" points="3.05058366 3.05681818 30.4609751 107.882081 57.1984436 59.6079545 93.0428016 212.448864 109.821012 153.605114 138.801556 265.943182 166.256809 79.4772727 192.949416 162.011364"></polyline>
+            <polyline id="Path-4" stroke="#870bbf" points="3.05058366 3.05681818 30.4609751 107.882081 57.1984436 59.6079545 93.0428016 212.448864 109.821012 153.605114 138.801556 265.943182 166.256809 79.4772727 192.949416 162.011364"></polyline>
             <ellipse id="Oval-3" stroke="#FFFFFF" fill="#00BF6D" cx="3.05058366" cy="3.05681818" rx="3.05058366" ry="3.05681818"></ellipse>
             <ellipse id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="109.058366" cy="154.369318" rx="3.05058366" ry="3.05681818"></ellipse>
             <ellipse id="Oval-3-Copy" stroke="#E7FFFE" fill="#00BF6D" cx="30.5058366" cy="107.752841" rx="3.05058366" ry="3.05681818"></ellipse>
             <ellipse id="Oval-3" stroke="#E7FFFE" fill="#6DB697" cx="92.2801556" cy="210.920455" rx="3.05058366" ry="3.05681818"></ellipse>
-            <ellipse id="Oval-3" stroke="#E7FFFE" fill="#9BE8C7" cx="138.801556" cy="265.943182" rx="3.05058366" ry="3.05681818"></ellipse>
-            <ellipse id="Oval-3-Copy-3" stroke="#E7FFFE" fill="#9BE8C7" cx="165.494163" cy="80.2414773" rx="3.05058366" ry="3.05681818"></ellipse>
-            <ellipse id="Oval-3-Copy-4" stroke="#E7FFFE" fill="#9BE8C7" cx="192.949416" cy="160.482955" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3" stroke="#E7FFFE" fill="#f9dcff" cx="138.801556" cy="265.943182" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy-3" stroke="#E7FFFE" fill="#f9dcff" cx="165.494163" cy="80.2414773" rx="3.05058366" ry="3.05681818"></ellipse>
+            <ellipse id="Oval-3-Copy-4" stroke="#E7FFFE" fill="#f9dcff" cx="192.949416" cy="160.482955" rx="3.05058366" ry="3.05681818"></ellipse>
         </g>
         <polyline id="Path-21" stroke="#20C4B6" points="228 139 255.463918 221.557692 265.381443 200.153846 302 298"></polyline>
         <circle id="Oval-3-Copy-2" stroke="#E7FFFE" fill="#00BF6D" cx="229" cy="141" r="3"></circle>

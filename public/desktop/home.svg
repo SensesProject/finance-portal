@@ -6,19 +6,19 @@
     <defs>
         <linearGradient x1="1.06476664%" y1="100%" x2="14.4284751%" y2="100%" id="linearGradient-1">
             <stop stop-color="#5263FF" offset="0%"></stop>
-            <stop stop-color="#0BBFB0" offset="100%"></stop>
+            <stop stop-color="#870bbf" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
-            <stop stop-color="#0BBFB0" offset="0%"></stop>
+            <stop stop-color="#870bbf" offset="0%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50%" y1="62.503104%" x2="50%" y2="3.061617e-15%" id="linearGradient-3">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#0BBFB0" offset="100%"></stop>
+            <stop stop-color="#870bbf" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="52.5183741%" y1="50%" x2="0%" y2="50%" id="linearGradient-4">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#0BBFB0" offset="100%"></stop>
+            <stop stop-color="#870bbf" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -27,31 +27,31 @@
             <circle id="Oval-Copy" fill="#C5FFFA" fill-rule="nonzero" cx="447" cy="166" r="98"></circle>
             <circle id="Oval-Copy-2" fill="#C5FFFA" fill-rule="nonzero" cx="699" cy="173" r="71"></circle>
             <path d="M11,216 L76.8356808,216 C87.329091,216 95.8356808,207.49341 95.8356808,197 L95.8356808,153 C95.8356808,142.50659 104.342271,134 114.835681,134 L145.659811,134 L145.659811,134 L706,134" id="Path-17" stroke="url(#linearGradient-1)"></path>
-            <path d="M158,134 L236.412809,134 L236.512842,134 C248.110821,134 257.512842,143.40202 257.512842,155 C257.512842,166.59798 266.914862,176 278.512842,176 L316.547448,176 C328.145428,176 337.547448,166.59798 337.547448,155 C337.547448,143.40202 346.949469,134 358.547448,134 L387.12342,134 C398.721399,134 408.12342,143.40202 408.12342,155 C408.12342,166.59798 417.52544,176 429.12342,176 L566.109904,176 C577.707883,176 587.109904,166.59798 587.109904,155 C587.109904,143.40202 596.511924,134 608.109904,134 L683,134 L683,134" id="Path-18" stroke="#0BBFB0"></path>
+            <path d="M158,134 L236.412809,134 L236.512842,134 C248.110821,134 257.512842,143.40202 257.512842,155 C257.512842,166.59798 266.914862,176 278.512842,176 L316.547448,176 C328.145428,176 337.547448,166.59798 337.547448,155 C337.547448,143.40202 346.949469,134 358.547448,134 L387.12342,134 C398.721399,134 408.12342,143.40202 408.12342,155 C408.12342,166.59798 417.52544,176 429.12342,176 L566.109904,176 C577.707883,176 587.109904,166.59798 587.109904,155 C587.109904,143.40202 596.511924,134 608.109904,134 L683,134 L683,134" id="Path-18" stroke="#870bbf"></path>
             <circle id="Oval-12" stroke="#FFFFFF" stroke-width="2" fill="#5263FF" fill-rule="nonzero" cx="10" cy="216" r="10"></circle>
-            <circle id="Oval-12-Copy" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="235" cy="134" r="10"></circle>
-            <circle id="Oval-12-Copy-2" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="292" cy="176" r="10"></circle>
-            <circle id="Oval-12-Copy-3" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="366" cy="134" r="10"></circle>
-            <circle id="Oval-12-Copy-4" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="456" cy="176" r="10"></circle>
-            <circle id="Oval-12-Copy-5" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="529" cy="176" r="10"></circle>
-            <circle id="Oval-12-Copy-7" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="485" cy="211" r="7"></circle>
-            <circle id="Oval-12-Copy-6" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="699" cy="134" r="10"></circle>
+            <circle id="Oval-12-Copy" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="235" cy="134" r="10"></circle>
+            <circle id="Oval-12-Copy-2" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="292" cy="176" r="10"></circle>
+            <circle id="Oval-12-Copy-3" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="366" cy="134" r="10"></circle>
+            <circle id="Oval-12-Copy-4" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="456" cy="176" r="10"></circle>
+            <circle id="Oval-12-Copy-5" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="529" cy="176" r="10"></circle>
+            <circle id="Oval-12-Copy-7" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="485" cy="211" r="7"></circle>
+            <circle id="Oval-12-Copy-6" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="699" cy="134" r="10"></circle>
             <g id="PRIMER" transform="translate(35.617010, 173.590098) rotate(-45.000000) translate(-35.617010, -173.590098) translate(9.117010, 164.090098)" fill="#5263FF" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
                 <text>
                     <tspan x="0.40990258" y="14.989592">PRIMER</tspan>
                 </text>
             </g>
-            <g id="BUDGET" transform="translate(330.368272, 70.131728) rotate(-45.000000) translate(-330.368272, -70.131728) translate(303.368272, 61.131728)" fill="#0BBFB0" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
+            <g id="BUDGET" transform="translate(330.368272, 70.131728) rotate(-45.000000) translate(-330.368272, -70.131728) translate(303.368272, 61.131728)" fill="#870bbf" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
                 <text>
                     <tspan x="0" y="14">BUDGET</tspan>
                 </text>
             </g>
-            <g id="TRANSITIONS" transform="translate(536.529437, 38.970563) rotate(-45.000000) translate(-536.529437, -38.970563) translate(491.029437, 29.970563)" fill="#0BBFB0" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
+            <g id="TRANSITIONS" transform="translate(536.529437, 38.970563) rotate(-45.000000) translate(-536.529437, -38.970563) translate(491.029437, 29.970563)" fill="#870bbf" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
                 <text>
                     <tspan x="0" y="14">TRANSITIONS</tspan>
                 </text>
             </g>
-            <g id="EXTREME-EVENTS" transform="translate(773.443651, 85.556349) rotate(-45.000000) translate(-773.443651, -85.556349) translate(742.443651, 67.556349)" fill="#0BBFB0" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
+            <g id="EXTREME-EVENTS" transform="translate(773.443651, 85.556349) rotate(-45.000000) translate(-773.443651, -85.556349) translate(742.443651, 67.556349)" fill="#870bbf" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal">
                 <text id="EXTREME">
                     <tspan x="0" y="14">EXTREME</tspan>
                 </text>
@@ -59,14 +59,14 @@
                     <tspan x="0" y="32">EVENTS</tspan>
                 </text>
             </g>
-            <path d="M456,175 L456,198 C456,205.179702 461.820298,211 469,211 L485,211 L485,211" id="Path-19" stroke="#0BBFB0" stroke-dasharray="2"></path>
+            <path d="M456,175 L456,198 C456,205.179702 461.820298,211 469,211 L485,211 L485,211" id="Path-19" stroke="#870bbf" stroke-dasharray="2"></path>
             <line x1="699.666667" y1="174.815789" x2="699.666667" y2="298" id="Path-36" stroke="url(#linearGradient-2)" stroke-dasharray="2"></line>
-            <path d="M700,134 L700,157 C700,164.179702 705.820298,170 713,170 L744,170 L744,170" id="Path-19-Copy" stroke="#0BBFB0" stroke-dasharray="2"></path>
-            <path d="M700,157 L700,178 C700,185.179702 705.820298,191 713,191 L744,191 L744,191" id="Path-19-Copy-2" stroke="#0BBFB0" stroke-dasharray="2"></path>
-            <path d="M700,178 L700,199 C700,206.179702 705.820298,212 713,212 L744,212 L744,212" id="Path-19-Copy-2-Copy" stroke="#0BBFB0" stroke-dasharray="2"></path>
-            <circle id="Oval-12-Copy-7" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="742.5" cy="170.5" r="6.5"></circle>
-            <circle id="Oval-12-Copy-8" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="742.5" cy="193.5" r="6.5"></circle>
-            <circle id="Oval-12-Copy-8-Copy" stroke="#C5FFFA" stroke-width="2" fill="#0BBFB0" fill-rule="nonzero" cx="742.5" cy="214.5" r="6.5"></circle>
+            <path d="M700,134 L700,157 C700,164.179702 705.820298,170 713,170 L744,170 L744,170" id="Path-19-Copy" stroke="#870bbf" stroke-dasharray="2"></path>
+            <path d="M700,157 L700,178 C700,185.179702 705.820298,191 713,191 L744,191 L744,191" id="Path-19-Copy-2" stroke="#870bbf" stroke-dasharray="2"></path>
+            <path d="M700,178 L700,199 C700,206.179702 705.820298,212 713,212 L744,212 L744,212" id="Path-19-Copy-2-Copy" stroke="#870bbf" stroke-dasharray="2"></path>
+            <circle id="Oval-12-Copy-7" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="742.5" cy="170.5" r="6.5"></circle>
+            <circle id="Oval-12-Copy-8" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="742.5" cy="193.5" r="6.5"></circle>
+            <circle id="Oval-12-Copy-8-Copy" stroke="#C5FFFA" stroke-width="2" fill="#870bbf" fill-rule="nonzero" cx="742.5" cy="214.5" r="6.5"></circle>
             <path d="M366,135 L366,230.366197 C366,240.859607 357.49341,249.366197 347,249.366197 L170,249.366197 C159.50659,249.366197 151,257.872787 151,268.366197 L151,367 L151,367" id="Path-34" stroke="url(#linearGradient-3)" stroke-dasharray="2"></path>
             <path d="M530,176 L530,259.407407 C530,268.243963 537.163444,275.407407 546,275.407407 L684,275.407407 C692.836556,275.407407 700,282.570851 700,291.407407 L700,396 L700,396" id="Path-35" stroke="url(#linearGradient-4)" stroke-dasharray="2"></path>
         </g>

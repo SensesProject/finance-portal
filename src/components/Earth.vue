@@ -189,7 +189,7 @@ export default {
 h2 {
   font-family: 'IBM Plex Mono', serif;
   font-weight: normal;
-  color: #0BBFB0;
+  color: #870bbf;
   font-size: 35px;
 }
 </style>

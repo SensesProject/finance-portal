@@ -1,7 +1,7 @@
 <template>
   <div class="container" :class="isMobile ? 'mobile' : 'desktop'">
     <div class="inner">
-      <h1>Welcome to the Senses Policy Portal.</h1>
+      <h1>Welcome to the Finance Portal.</h1>
       <div class="text">
         <span>
           Here you can explore a curated sets of learning modules regarding
@@ -26,7 +26,7 @@
     </div>
     <div class="down_arrow">↓</div>
     <HomeMap v-if="isMobile === false"/>
-    <img v-if="mobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
+    <img v-if="isMobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
     <a id="primer" href="https://www.climatescenarios.org/primer/">
     <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
     </a>
@@ -75,7 +75,7 @@ img {
 h1 {
   font-weight: 700;
   /* text-shadow: -1px 0 #003733, 0 1px #003733, 1px 0 #003733, 0 -1px #003733; */
-  color: #0bbfb0;
+  color: #870bbf;
   font-size: 100px;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #003733; */
@@ -93,7 +93,7 @@ h1 {
 }
 
 .down_arrow {
-  color: #0bbfb0;
+  color: #870bbf;
   font-size: 50px;
   margin-top: 55px;
   margin-bottom: 20px;
