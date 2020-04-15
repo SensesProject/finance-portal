@@ -137,12 +137,12 @@ export default {
 
   text-align: right;
 
-  .primary-energy & {
-    background: none;
-  }
+  // .primary-energy & {
+  //   background: none;
+  // }
 
   .stocktake-1 &,
-  .transition-path-1 &,
+  .fossil-fuels &,
   .land-affected & {
     color: #870bbf;
     border-bottom: 1px dotted #870bbf;
@@ -168,22 +168,22 @@ export default {
     background: #f8e0fe;
   }
 
-  .stocktake-1 & {
+  .fossil-fuels & {
     left: 53%;
     top: 23%;
   }
 
-  .stocktake-2 & {
+  .power-sector & {
     left: 20%;
     top: 22%;
   }
 
-  .transition-path-1 & {
+  .investment-opportunities & {
     left: 33%;
     top: 20%;
   }
 
-  .transition-path-2 & {
+  .investment-opportunities & {
     left: 25%;
     top: 25%;
   }
@@ -224,7 +224,7 @@ export default {
   cursor: pointer;
   z-index: 1000;
 
-  .stocktake-2 & {
+  .power-sector & {
     left: 20%;
     .description {
       width: 500px;
@@ -241,7 +241,7 @@ export default {
     }
   }
 
-  .transition-path-1 & {
+  .fossil-fuels & {
     left: 35%;
     top: 30%;
     h2 {
@@ -252,10 +252,10 @@ export default {
     }
   }
 
-  .transition-path-2 & {
+  .investment-opportunities & {
     left: 25%;
     h2 {
-      width: 550px;
+      width: 600px;
     }
     .description {
       width: 450px;
@@ -438,7 +438,7 @@ export default {
 
   .icon {
     border-radius: 10px;
-    border: 1px solid #3bccb7;
+    border: 1px solid #870bbf;
     width: 15px;
     height: 15px;
     float: left;
