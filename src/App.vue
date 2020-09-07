@@ -4,6 +4,7 @@
     <Navigation v-if="!isMobile" />
     <NavigationMobile v-if="isMobile" />
     <SensesDownload
+      v-if="activePortal"
       :visible="downloadOpen"
       :ids="activePortal.downloadIDs || []"
       :title="activePortal.title"
@@ -35,7 +36,7 @@ import BackgroundLine from "./components/BackgroundLine.vue";
 import AnimatedSvg from "./components/AnimatedSvg.vue";
 import ModuleText from "./components/ModuleText.vue";
 import Earth from "./components/Earth.vue";
-import { mapState, mapGetters } from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
 
 let ticking = false;
 
@@ -59,6 +60,9 @@ export default {
     ...mapGetters(["modulesData", "activePortal"])
   },
   methods: {
+    ...mapActions([
+      'loadModules'
+    ]),
     getSvgPath: function(path) {
       const p = this.isMobile ? "mobile/" : "desktop/";
       return p + path + ".svg";
@@ -94,20 +98,10 @@ export default {
     },
     downloadClose (id, downloadIDs, title) {
       this.$store.state.downloadOpen = false
-    },
-    fetchModules(){
-      fetch('https://dev.climatescenarios.org/settings/modules.json')
-        .then(response => response.json())
-        .then((myJson) => {
-          console.log(myJson);
-        });
-
     }
   },
   mounted: function() {
-    console.log(this.modulesData);
-    this.fetchModules();
-    // this.modulesData.forEach(d => console.log(d.path));
+    this.loadModules();
     window.addEventListener("scroll", this.onScroll);
     window.addEventListener("load", this.reflow);
     window.addEventListener("resize", this.reflow);
