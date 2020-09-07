@@ -2,27 +2,8 @@
   <div class="container" :class="isMobile ? 'mobile' : 'desktop'">
     <div class="inner">
       <h1>Welcome to the Finance Portal.</h1>
-      <div class="text">
-        <span>
-          Here you can explore a curated sets of learning modules regarding
-          Policy related aspects of Climate Change.<br>
-          You can scroll three different chapters:
-          <span class="dotted">Budgets</span>,
-          <span class="dotted">Transitions</span>
-          and <span class="dotted">Extreme Events</span>.
-        </span><br>
-        <span><a>If you are interested in all the Senses Project material refer to the Toolkit.</a></span>
-        <span><br /><br />
-          In the <span class="dotted">Budgets</span> chapter you will be introduced
-          to the near and long-term plans to reach Net Zero emissions in the next
-          century. The <span class="dotted">Transitions</span> section is dedicated
-          to different kind of transitions that might occur. From energetic
-          to land transitions, you will be provided with a complete overview of how
-          our future will look like.
-          The <span class="dotted">Extreme Events</span> chapter is dedicated to the extent
-          and impact of Climate Change according to the predictions.
-        </span>
-      </div>
+      <!-- <div class="text">
+      </div> -->
     </div>
     <div class="down_arrow">↓</div>
     <HomeMap v-if="isMobile === false"/>
