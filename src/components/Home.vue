@@ -1,16 +1,22 @@
 <template>
   <div class="container" :class="isMobile ? 'mobile' : 'desktop'">
     <div class="inner">
-      <h1>Welcome to the Finance Portal.</h1>
-      <!-- <div class="text">
-      </div> -->
+      <a id="primer" href="https://www.climatescenarios.org/primer/">
+      <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan primer" />
+      </a>
+      <h1>This is the Finance Portal.</h1>
+      <div class="text">
+          <span>
+            Climate change scenarios can inform financial decision making about
+            the impacts of climate change on the economy and financial assets
+            (physical risks) and the need to transform to climate neutral economies
+            (transition risks and investment opportunities).
+        </span>
+      </div>
     </div>
     <div class="down_arrow">↓</div>
-    <HomeMap v-if="isMobile === false"/>
+    <!-- <HomeMap v-if="isMobile === false"/> -->
     <img v-if="isMobile" :src="(isMobile ? 'mobile' : 'desktop') + '/home.svg'" class="plan"/>
-    <a id="primer" href="https://www.climatescenarios.org/primer/">
-    <img :src="(isMobile ? 'mobile' : 'desktop') + '/primer.svg'" class="plan" />
-    </a>
   </div>
 </template>
 
@@ -36,7 +42,7 @@ export default {
   /* height: 100vh; */
   flex-flow: column;
   margin-bottom: 100px;
-  max-width: 815px;
+  max-width: 1050px;
   margin: 0 4em;
   margin-bottom: 7em;
 }
@@ -54,13 +60,9 @@ img {
 }
 
 h1 {
-  font-weight: 700;
-  /* text-shadow: -1px 0 #003733, 0 1px #003733, 1px 0 #003733, 0 -1px #003733; */
-  color: #870bbf;
-  font-size: 100px;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #003733; */
-  line-height: 1em;
+  color: #b035c9;
+  font-size: 140px;
+  line-height: 1.1em;
   margin-bottom: 60px;
   margin-top: 60px;
 
@@ -69,19 +71,32 @@ h1 {
   }
 }
 
+.text {
+  width: 100%;
+  font-size: 25px;
+  color: #720a87;
+}
+
 .senses {
   color: #5263FF;
 }
 
 .down_arrow {
-  color: #870bbf;
+  color: #720a87;
   font-size: 50px;
-  margin-top: 55px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
 .plan {
-  margin-top: 40px;
+
+  &.primer {
+    width: 40%;
+    position: absolute;
+    padding-left: 20px;
+    right: 5%;
+    top: 10%;
+  }
 }
 
 .mobile {

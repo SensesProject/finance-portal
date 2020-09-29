@@ -19,14 +19,17 @@ export default new Vuex.Store({
     modulesData: (state) => {
       const additionalItems = [
         { path: "intro", mainTopic: "Intro", portalNum: -1, simple: true },
-        // { path: "earth", mainTopic: "Extreme Events", portalNum: 7, simple: state.isMobile },
+        { path: "earth", mainTopic: "Extreme Events", portalNum: 1, simple: state.isMobile },
         { path: "end", mainTopic: "Continue", portalNum: 100 }
       ];
 
       if (state.modulesJson.length) {
+        const element = state.modulesJson
+          .filter(m => m.id === "emissions-gap")
         return state.modulesJson
           .filter(m => m.portal === "Finance" && Number.isInteger(m.portalNum))
           .concat(...additionalItems)
+          .concat(element)
           .sort((a, b) => a.portalNum - b.portalNum);
       } else {
         return []

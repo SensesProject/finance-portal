@@ -1,6 +1,13 @@
 <template>
   <div class="container earth" :class="{mobile}">
-    <div class="item" :class="{visible: true}">
+    <div class="introduction">
+      Climate change induced physical risks to financial assets emerge from
+      climate change damages on economic output, productivity, capital and labor.
+      A key element are damages from an increase in the frequency and
+      severity of extreme events.
+    </div>
+    <!-- <div class="items-container"> -->
+    <div class="item first-item" :class="{visible: true}">
       <div class="earths" v-if="!mobile">
         <img
           v-for="i in 9"
@@ -18,12 +25,7 @@
          />
       </div>
       <div class="text">
-        <h2>Crops</h2>
-        <div class="description">
-          Discover how different regions will be impacted by
-          <span class="dotted">crop failures</span> in 100 years.
-        </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Crops</h2></a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.3}">
@@ -44,12 +46,7 @@
          />
       </div>
       <div class="text">
-        <h2>Floodings</h2>
-        <div class="description">
-          Discover how different regions will be impacted by
-          <span class="dotted">floodings</span> in 100 years.
-        </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Floods</h2></a>
       </div>
     </div>
     <div class="item" :class="{visible: ratio > 0.6}">
@@ -70,15 +67,11 @@
          />
       </div>
       <div class="text">
-        <h2>Wildfires</h2>
-        <div class="description">
-          Discover how different regions will be impacted by
-          <span class="dotted">wildfires</span> in 100 years.
-        </div>
-        <a class="readbutton" href="https://dev.climatescenarios.org/earth/">GO TO SENSES EARTH</a>
+        <a class="readbutton" href="https://dev.climatescenarios.org/earth/"><h2>Explore Wildfires</h2></a>
       </div>
     </div>
-    <img class="backgroundPath" src="desktop/background/earth.svg" v-if="!{mobile}"/>
+  <!-- </div> -->
+  <img class="backgroundPath" src="desktop/background/earth-ok.svg" v-if="{mobile}"/>
   </div>
 </template>
 
@@ -100,11 +93,33 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .container {
-  display: flex;
+  .backgroundPath {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 40px;
+    pointer-events: none;
+    vector-effect: non-scaling-stroke;
+
+    .mobile & {
+      display: none;
+    }
+  }
+
   align-items: center;
   justify-content: space-evenly;
-  width: calc(100% - 180px);
-  margin-left: 180px;
+  width: 60%;
+
+  .introduction {
+    width: 400px;
+    position: absolute;
+    font-size: 14px;
+    left: 50%;
+    top: 35%;
+    z-index: 2;
+    color: #9f3bcc;
+  }
 
   &.mobile {
     flex-flow: column;
@@ -113,21 +128,31 @@ export default {
   }
 }
 
-.backgroundPath {
+/* .backgroundPath {
   position: absolute;
   width: 100%;
   height: 100vh;
   left: 0;
   top: 0;
   pointer-events: none;
-}
+} */
 
 .item {
-  width: 250px;
+  padding-left: 10px;
+  width: 300px;
   opacity: 0.1;
   transition: opacity 0.5s;
   z-index: 1;
-  padding: 1em;
+  padding-top: 50px;
+  padding-left: 1em;
+  /* text-align: center; */
+  display: flex;
+
+  .earths {
+    img {
+      width: 150px;
+    }
+  }
 
   .mobile & {
     opacity 1;
@@ -152,7 +177,10 @@ export default {
 }
 
 .text {
-  padding-top: 2em;
+  h2 {
+    font-size: 1em;
+  }
+  padding-top: 10px;
 
   .mobile & {
     h2 {
@@ -178,8 +206,8 @@ export default {
 }
 
 .earths {
-  position: relative;
-
+  /* position: relative; */
+  width: 300px;
   img {
     position: relative;
     width: 100%;
@@ -189,7 +217,7 @@ export default {
 h2 {
   font-family: 'IBM Plex Mono', serif;
   font-weight: normal;
-  color: #870bbf;
+  color: #9f3bcc;
   font-size: 35px;
 }
 </style>

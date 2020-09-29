@@ -1,21 +1,7 @@
 <template>
   <div class="container" :class="[data.path, {mobile}]">
     <div class="header">{{ data.mainTopic }}</div>
-    <div class="info">
-      <div class="credits">
-        <div class="icon"></div>
-        <div class="content">{{ data.authors.join(" / ") }}</div>
-      </div>
-      <div class="read">
-        <div class="icon"></div>
-        <div class="content">{{ data.readingTime }} minutes</div>
-      </div>
-      <div class="tags">
-        <div class="icon"></div>
-        <div class="content" v-if="data.downloadIDs"><a v-on:click="onClick">Download Extras</a></div>
-        <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
-      </div>
-    </div>
+    <div class="description-par" v-if="data.portalDescription">{{ data.portalDescription }}</div>
     <a :href="data.link" class="link-title">
     <div class="circle"></div>
     <div class="text">
@@ -31,6 +17,25 @@
     </div>
     <div class="circle"></div>
   </a>
+  <div class="info">
+    <div class="credits">
+      <div class="icon"></div>
+      <div class="content" v-if="data.authors">
+        <span v-for="(author, a) in authors" :key="`${a}-author`">
+          <span v-if="a !== 0">/</span> {{author}}
+        </span>
+      </div>
+    </div>
+    <div class="read">
+      <div class="icon"></div>
+      <div class="content">{{ data.readingTime }} minutes</div>
+    </div>
+    <div class="tags">
+      <div class="icon"></div>
+      <div class="content" v-if="data.downloadIDs"><a v-on:click="onClick">Download Extras</a></div>
+      <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
+    </div>
+  </div>
     <div class="background" />
     <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
@@ -41,6 +46,24 @@
 <script>
 export default {
   props: ["data", "ratio", "mobile", "active"],
+  computed: {
+    authors () {
+      const authors = this.data.authors
+      return authors.map((a, i) => {
+        if (authors !== undefined) {
+          const name = a.slice(0, 1)
+          const whitespace = a.indexOf(' ')
+          let surname = ''
+          if (a.indexOf(' ') >= 0) {
+            surname = a.slice(whitespace, a.length)
+          }
+          return name + '.' + surname
+        } else {
+          return []
+        }
+      })
+    }
+  },
   methods: {
     onClick () {
       this.$store.state.downloadOpen = true
@@ -71,7 +94,7 @@ export default {
 .background {
   position: absolute;
   width: 100%;
-  background: #f9dcff;
+  background: #9be8c7;
   height: 60vh;
   left: 0;
   top: 20vh;
@@ -137,16 +160,46 @@ export default {
 
   text-align: right;
 
-  // .primary-energy & {
-  //   background: none;
-  // }
-
-  .stocktake-1 &,
-  .fossil-fuels &,
-  .land-affected & {
-    color: #870bbf;
-    border-bottom: 1px dotted #870bbf;
+  .power-sector &,
+  .investment-opportunities &,
+  .fossil-risks &,
+  .end-use & {
+    color: #9f3bcc;
+    border-bottom: 1px dotted #9f3bcc;
     background: none;
+  }
+}
+
+.description-par {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  font-size: 14px;
+  color: #9f3bcc;
+
+  .end-use & {
+    width: 300px;
+    left: 68%;
+  }
+
+  .emissions-gap & {
+    width: 300px;
+    left: 44%;
+    text-align: right;
+  }
+
+  .investment-opportunities & {
+    width: 300px;
+    left: 70%;
+  }
+}
+
+.container:hover {
+  &.emissions-gap {
+    .circle {
+      background:#e6fffe;
+    }
   }
 }
 
@@ -156,7 +209,7 @@ export default {
   width: 400px;
   height: 400px;
   mix-blend-mode: multiply;
-  border: 2px solid #f8e0fe;
+  border: 2px solid #fee6ff;
   transition: background 1s;
   pointer-events: none;
   left: calc(50% - 150px);
@@ -165,25 +218,31 @@ export default {
   z-index: 1;
 
   .container:hover & {
-    background: #f8e0fe;
-  }
-
-  .fossil-fuels & {
-    left: 53%;
-    top: 23%;
+    background: #fee6ff;
   }
 
   .power-sector & {
+    left: 33%;
+    top: 33%;
+  }
+
+  .emissions-gap & {
+    border: 2px solid #e6fffe;
+    left: 47%;
+    top: 43%;
+  }
+
+  .stocktake-2 & {
     left: 20%;
     top: 22%;
   }
 
-  .investment-opportunities & {
+  .end-use & {
     left: 33%;
     top: 20%;
   }
 
-  .investment-opportunities & {
+  .transition-path-2 & {
     left: 25%;
     top: 25%;
   }
@@ -196,7 +255,7 @@ export default {
     height: 280px;
   }
 
-  .land-transitions & {
+  .fossil-risks & {
     left: 25%;
     top: 40%;
   }
@@ -212,7 +271,7 @@ export default {
     left: 0%;
     top: 20%;
 
-    background-color: #e6fffe;
+    background-color: #fee6ff;
   }
 }
 
@@ -225,9 +284,25 @@ export default {
   z-index: 1000;
 
   .power-sector & {
-    left: 20%;
+    left: 40%;
+    top: 40%;
+
+    h2 {
+      width: 500px;
+    }
     .description {
       width: 500px;
+    }
+  }
+
+  .emissions-gap & {
+    left: 55%;
+    top: 50%;
+    h2 {
+      width: 500px;
+    }
+    .description {
+      width: 400px;
     }
   }
 
@@ -241,7 +316,7 @@ export default {
     }
   }
 
-  .fossil-fuels & {
+  .end-use & {
     left: 35%;
     top: 30%;
     h2 {
@@ -253,7 +328,8 @@ export default {
   }
 
   .investment-opportunities & {
-    left: 25%;
+    left: 35%;
+    top: 45%;
     h2 {
       width: 600px;
     }
@@ -276,24 +352,12 @@ export default {
     }
   }
 
-  .land-affected & {
+  .fossil-risks & {
     left: 35%;
     top: 40%;
 
     h2 {
       width: 500px;
-    }
-    .description {
-      width: 550px;
-    }
-  }
-
-  .land-transitions & {
-    left: 25%;
-    top: 50%;
-
-    h2 {
-      width: 600px;
     }
     .description {
       width: 550px;
@@ -379,11 +443,15 @@ export default {
 
 .info {
   position: absolute;
-  left: 52%;
+  left: 5%;
   font-size: 12px;
   text-transform: uppercase;
-  top: 100px;
+  bottom: 50px;
   z-index: 1000;
+
+  // .power-sector & {
+  //   left: 65%;
+  // }
 
   .primary-energy & {
     top: 65%;
@@ -398,7 +466,7 @@ export default {
     clear: both;
     float: left;
     border-radius: 10px;
-    // background: #f9dcff;
+    // background: #9be8c7;
     margin: 5px 0 0 0;
 
     .content {
@@ -438,7 +506,7 @@ export default {
 
   .icon {
     border-radius: 10px;
-    border: 1px solid #870bbf;
+    border: 1px solid #9f3bcc;
     width: 15px;
     height: 15px;
     float: left;

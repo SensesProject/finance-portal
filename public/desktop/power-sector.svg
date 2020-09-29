@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
     <title>power-sector</title>
-    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="438.5" cy="254.5" r="52.5"></circle>
+        <circle id="path-2" cx="294.5" cy="254.5" r="52.5"></circle>
+        <circle id="path-3" cx="178.5" cy="255.5" r="45.5"></circle>
+        <circle id="path-4" cx="620" cy="255" r="63"></circle>
+        <circle id="path-5" cx="785.5" cy="254.5" r="31.5"></circle>
+    </defs>
     <g id="power-sector" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <line x1="113" y1="254" x2="911" y2="254" id="Path-22" stroke="#DEA8FF"></line>
-        <circle id="Oval" stroke="#BE4FFF" fill="#F8ECFF" cx="206" cy="254.5" r="27.5"></circle>
+        <circle id="Oval" stroke="#BE4FFF" fill="#F8ECFF" cx="178.5" cy="254.5" r="27.5"></circle>
         <circle id="Oval-Copy" stroke="#BE4FFF" fill="#F8ECFF" cx="294.5" cy="254.5" r="32.5"></circle>
-        <circle id="Oval-Copy-2" stroke="#BE4FFF" fill="#F8ECFF" cx="429" cy="254" r="73"></circle>
+        <circle id="Oval-Copy-2" stroke="#BE4FFF" fill="#F8ECFF" cx="438" cy="254" r="73"></circle>
+        <g id="Oval-Copy-2" stroke-dasharray="2">
+            <use fill="#F8ECFF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-1"></use>
+            <use stroke="#BE4FFF" stroke-width="1" xlink:href="#path-1"></use>
+        </g>
+        <g id="Oval-Copy-7" stroke-dasharray="2">
+            <use fill="#F8ECFF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-2"></use>
+            <use stroke="#BE4FFF" stroke-width="1" xlink:href="#path-2"></use>
+        </g>
+        <g id="Oval-Copy-8" stroke-dasharray="2">
+            <use fill="#F8ECFF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-3"></use>
+            <use stroke="#BE4FFF" stroke-width="1" xlink:href="#path-3"></use>
+        </g>
         <circle id="Oval-Copy-3" stroke="#BE4FFF" fill="#F8ECFF" cx="620" cy="254" r="90"></circle>
-        <circle id="Oval-Copy-4" stroke="#BE4FFF" fill="#F8ECFF" cx="795" cy="254" r="56"></circle>
+        <circle id="Oval-Copy-4" stroke="#BE4FFF" fill="#F8ECFF" cx="785" cy="254" r="56"></circle>
+        <g id="Oval-Copy-5" stroke-dasharray="2">
+            <use fill="#F8ECFF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-4"></use>
+            <use stroke="#BE4FFF" stroke-width="1" xlink:href="#path-4"></use>
+        </g>
+        <g id="Oval-Copy-6" stroke-dasharray="2">
+            <use fill="#F8ECFF" fill-rule="evenodd" style="mix-blend-mode: multiply;" xlink:href="#path-5"></use>
+            <use stroke="#BE4FFF" stroke-width="1" xlink:href="#path-5"></use>
+        </g>
     </g>
 </svg>

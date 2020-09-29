@@ -1,12 +1,12 @@
 <template>
   <div class="container" :class="{mobile}">
     <!-- <Dot class="dot"/> -->
-    <div class="dot"></div>
+    <!-- <div class="dot"></div> -->
     <div class="inner">
       <h1>
-        <a href="#" target="_blank">
+        <a href="policy-portal" target="_blank">
         Continue on the Policy Portal. <br v-if="{mobile} === true"/>
-          <span class="right_arrow">→</span>
+          <!-- <span class="right_arrow">→</span> -->
         </a>
       </h1>
     </div>
@@ -27,17 +27,24 @@ export default {
   display: flex;
   height: 100vh;
   flex-flow: column;
+  text-align: right;
 }
 .inner {
-  width: 600px;
+  width: 1100px;
   z-index: 1;
-  margin: 0 4em;
+  margin: 0 6em;
 
   .mobile & {
     width: auto;
-    margin: 0 6em;
-    line-height: 58px;
+    margin: 0 2em;
+    line-height: 140px;
 
+  }
+}
+
+.inner:hover {
+  a {
+    color: #0bbfb0;
   }
 }
 
@@ -72,9 +79,9 @@ a {
 
 h1 {
   font-weight: 700;
-  /* text-shadow: -1px 0 #870bbf, 0 1px #870bbf, 1px 0 #870bbf, 0 -1px #870bbf; */
+  /* text-shadow: -1px 0 #0bbfb0, 0 1px #0bbfb0, 1px 0 #0bbfb0, 0 -1px #0bbfb0; */
   color: #fff;
-  font-size: 60px;
+  font-size: 140px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #0bbfb0;
   line-height: 1em;
