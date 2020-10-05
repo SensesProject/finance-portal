@@ -228,7 +228,7 @@ export default {
   }
 
   .power-sector & {
-    left: 33%;
+    left: 36%;
     top: 33%;
   }
 
@@ -261,8 +261,8 @@ export default {
     height: 280px;
   }
 
-  .fossil-risks & {
-    left: 25%;
+  .transition-risk & {
+    left: 60%;
     top: 40%;
   }
 
@@ -312,16 +312,6 @@ export default {
     }
   }
 
-  .primary-energy & {
-    left: 20%;
-    h2 {
-      width: 600px;
-    }
-    .description {
-      width: 500px;
-    }
-  }
-
   .end-use & {
     left: 35%;
     top: 30%;
@@ -358,15 +348,15 @@ export default {
     }
   }
 
-  .fossil-risks & {
-    left: 35%;
+  .transition-risk & {
+    left: 55%;
     top: 40%;
 
     h2 {
       width: 500px;
     }
     .description {
-      width: 550px;
+      width: 450px;
     }
   }
 

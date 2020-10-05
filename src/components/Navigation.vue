@@ -13,13 +13,13 @@
       </div>
       <div class="link">
         <a class="intro" href="#/intro"></a>
-        <a class="stocktake-1" href="#/stocktake-1"></a>
-        <a class="stocktake-2" href="#/stocktake-2"></a>
-        <a class="transition-path-1" href="#/transition-path-1"></a>
-        <a class="transition-path-2" href="#/transition-path-2"></a>
-        <a class="primary-energy" href="#/primary-energy"></a>
-        <a class="land-use" href="#/land-use"></a>
-        <a class="extreme-events" href="#/extreme-events"></a>
+        <a class="emissions-gap" href="#/emissions-gap"></a>
+        <a class="transition-risk" href="#/transition-risk"></a>
+        <a class="power-sector" href="#/power-sector"></a>
+        <a class="end-use" href="#/end-use"></a>
+        <a class="investment-opportunities" href="#/investment-opportunities"></a>
+        <!-- <a class="land-use" href="#/land-use"></a>
+        <a class="extreme-events" href="#/extreme-events"></a> -->
         <a class="earth" href="#/earth"></a>
         <a class="end" href="#/end"></a>
       </div>
@@ -124,57 +124,52 @@ export default {
     height: 20px;
     text-decoration: none;
     position: absolute;
-    background:none;
-  }
+    background: none;
+    &.intro {
+      top: 50px;
+      left: 50px;
+    }
 
-  .intro {
-    top: 50px;
-    left: 50px;
-  }
+    &.earth {
+      top: 90px;
+      left: 61px;
+    }
 
-  .stocktake-1 {
-    top: 123px;
-    left: 81px;
-  }
+    &.emissions-gap {
+      top: 130px;
+      left: 61px;
+    }
 
-  .stocktake-2 {
-    top: 154px;
-    left: 62px;
-  }
+    &.transition-risk {
+      top: 190px;
+      left: 95px;
+    }
 
-  .transition-path-1 {
-    top: 179px;
-    left: 81px;
-  }
+    &.power-sector {
+      top: 205px;
+      left: 70px;
+    }
 
-  .transition-path-2 {
-    top: 205px;
-    left: 62px;
-  }
+    &.end-use {
+      top: 205px;
+      left: 45px;
+    }
 
-  .primary-energy {
-    top: 220px;
-    left: 53px;
-  }
+    &.investment-opportunities {
+      top: 260px;
+      left: 61px;
+    }
 
-  .land-use {
-    top: 235px;
-    left: 62px;
-  }
+    &.extreme-events {
+      top: 260px;
+      left: 81px;
+    }
 
-  .extreme-events {
-    top: 260px;
-    left: 81px;
-  }
+    &.end {
+      top: 355px;
+      left: 35px;
+    }
 
-  .earth {
-    top: 280px;
-    left: 97px;
-  }
-
-  .end {
-    top: 320px;
-    left: 81px;
   }
 }
 
@@ -184,34 +179,34 @@ export default {
   left: 67px;
   transition: top 1s, left 1s;
 
-  .stocktake-1 & {
-    top: 123px;
-    left: 81px;
+  .earth & {
+    top: 90px;
+    left: 61px;
   }
 
-  .stocktake-2 & {
-    top: 154px;
-    left: 62px;
+  .emissions-gap & {
+    top: 130px;
+    left: 61px;
   }
 
-  .transition-path-1 & {
-    top: 179px;
-    left: 81px;
+  .transition-risk & {
+    top: 190px;
+    left: 95px;
   }
 
-  .transition-path-2 & {
+  .power-sector & {
     top: 205px;
-    left: 62px;
+    left: 70px;
   }
 
-  .primary-energy & {
-    top: 220px;
-    left: 53px;
+  .end-use & {
+    top: 205px;
+    left: 45px;
   }
 
-  .land-use & {
-    top: 235px;
-    left: 62px;
+  .investment-opportunities & {
+    top: 260px;
+    left: 61px;
   }
 
   .extreme-events & {
@@ -219,14 +214,9 @@ export default {
     left: 81px;
   }
 
-  .earth & {
-    top: 280px;
-    left: 97px;
-  }
-
   .end & {
-    top: 320px;
-    left: 81px;
+    top: 355px;
+    left: 35px;
   }
 }
 
