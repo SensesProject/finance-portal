@@ -6,6 +6,12 @@
       A key element are damages from an increase in the frequency and
       severity of extreme events.
     </div>
+    <div class="otherportal">
+      <a href="/policy-portal/#emissions-gap">
+        <p>&#10132;</p>
+        <h3>Discover also in the Policy Portal</h3>
+      </a>
+    </div>
     <!-- <div class="items-container"> -->
     <div class="item first-item" :class="{visible: true}">
       <div class="earths" v-if="!mobile">
@@ -71,7 +77,7 @@
       </div>
     </div>
   <!-- </div> -->
-  <img class="backgroundPath" src="desktop/background/earth-ok.svg" v-if="{mobile}"/>
+  <img class="backgroundPath" src="desktop/background/earth.svg" v-if="{mobile}"/>
   </div>
 </template>
 
@@ -109,13 +115,13 @@ export default {
 
   align-items: center;
   justify-content: space-evenly;
-  width: 60%;
+    /* width: 10%; */
 
   .introduction {
     width: 400px;
     position: absolute;
     font-size: 14px;
-    left: 50%;
+    left: 20%;
     top: 35%;
     z-index: 2;
     color: #9f3bcc;
@@ -138,7 +144,7 @@ export default {
 } */
 
 .item {
-  padding-left: 10px;
+  margin-left: 400px;
   width: 300px;
   opacity: 0.1;
   transition: opacity 0.5s;
@@ -219,5 +225,22 @@ h2 {
   font-weight: normal;
   color: #9f3bcc;
   font-size: 35px;
+}
+
+.otherportal {
+  position: absolute;
+  // width: 400px;
+  left: 20%;
+  top: 50%;
+
+  a {
+    display: flex;
+    color: #0bbfb0;
+
+    p {
+      margin-right: 10px;
+      transform: rotate(180deg);
+    }
+  }
 }
 </style>

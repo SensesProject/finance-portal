@@ -36,6 +36,12 @@
       <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
     </div>
   </div>
+  <div class="otherportal" v-if="data.id === 'emissions-gap'">
+    <a href="/policy-portal/#emissions-gap">
+      <p>&#10132;</p>
+      <h3>Discover also in the Policy Portal</h3>
+    </a>
+  </div>
     <div class="background" />
     <img class="backgroundPath" :src="'desktop/background/' + data.path + '.svg'" />
 
@@ -184,9 +190,9 @@ export default {
   }
 
   .emissions-gap & {
-    width: 300px;
-    left: 44%;
-    text-align: right;
+    width: 400px;
+    left: 26%;
+    text-align: left;
   }
 
   .investment-opportunities & {
@@ -437,6 +443,23 @@ export default {
         margin-top: 70px;
         background-color: #5263ff;
         color: white;
+    }
+  }
+}
+
+.otherportal {
+  position: absolute;
+  // width: 400px;
+  top: 30%;
+  left: 26%;
+
+  a {
+    display: flex;
+    color: #0bbfb0;
+
+    p {
+      margin-right: 10px;
+      transform: rotate(180deg);
     }
   }
 }

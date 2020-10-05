@@ -102,7 +102,7 @@ export default {
 
 .naviImage {
   position: absolute;
-  top: 90px;
+  top:70px;
   left: 10px;
   pointer-events: none;
 }

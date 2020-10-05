@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1024px" height="507px" viewBox="0 0 1024 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>emissions-gap</title>
-    <g id="emissions-gap" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(183.000000, 147.000000)" stroke-width="2">
+    <g id="emissions-gap" stroke="none" stroke-width="0.5" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(183.000000, 147.000000)" stroke-width="1">
             <line x1="0" y1="253" x2="812" y2="253" id="base" stroke="#0BBFB0"></line>
             <polyline id="emissions" stroke="#0BBFB0" points="2 99 34.2621951 88.5789474 68.2682927 75.5526316 77.8597561 66.8684211 103.146341 33.8684211 133.664634 6.07894737 145 0"></polyline>
             <polyline id="scenario1" stroke="#9BE8C7" points="74 69.2691218 148.288616 23.7433962 186.44197 11 273.154138 153.49434 372.58409 240.381132 476.638691 294.830189 573.756319 309.890566 657 318"></polyline>
