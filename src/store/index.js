@@ -24,12 +24,18 @@ export default new Vuex.Store({
       ];
 
       if (state.modulesJson.length) {
-        const element = state.modulesJson
-          .filter(m => m.id === "emissions-gap")
-        return state.modulesJson
-          .filter(m => m.portal === "Finance" && Number.isInteger(m.portalNum))
+        let items = []
+        // Filtering modules with Policy as portal option
+        state.modulesJson.map(m => {
+          if(m.portal !== undefined && m.portal !== null && m.portal.includes("Finance")) {
+            items.push(m)
+          }
+        })
+
+        return items
+          // Filter to avoid showing primer as tile
+          .filter(m => m.id !== 'primer' && Number.isInteger(m.portalNum))
           .concat(...additionalItems)
-          .concat(element)
           .sort((a, b) => a.portalNum - b.portalNum);
       } else {
         return []

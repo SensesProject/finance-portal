@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "earth": "github:SensesProject/earth#refactor",
     "gh-pages": "^2.2.0",
     "library": "github:SensesProject/library",
     "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.2",
     "sass-loader": "^8.0.2",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2",
