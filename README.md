@@ -1,4 +1,4 @@
-# Towards an Electric Future
+# Finance Portal
 This repository contains the code for [*Finance Portal*](https://dev.climatescenarios.org/finance-portal/), where sectorial transition and electrification is unpacked. It is part of the [SENSES Toolkit](https://climatescenarios.org/).
 
 ![screenshot of the module](./finance-portal.png)
@@ -7,8 +7,8 @@ This repository contains the code for [*Finance Portal*](https://dev.climatescen
 
 The source code is licensed under the [ISC license](LICENSE.md). Text and graphics are licensed under [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). For licensing information on datasets please refer to the data sources section. Exceptions are listed below on a per-file basis.
 
-# finance-portal
-A fresh copy of the policy portal
+## Last update on:
+December 28th, 2020
 
 ## Project setup
 ```
