@@ -1,5 +1,6 @@
 <template>
   <div class="container earth" :class="{mobile}">
+    <img class="backgroundPath" src="desktop/background/earth-ok.svg" v-if="{mobile}"/>
     <div class="introduction">
       Climate change induced physical risks to financial assets emerge from
       climate change damages on economic output, productivity, capital and labor.
@@ -34,7 +35,6 @@
       </div>
     </div>
   <!-- </div> -->
-  <img class="backgroundPath" src="desktop/background/earth-ok.svg" v-if="{mobile}"/>
   </div>
 </template>
 
@@ -65,8 +65,8 @@ export default {
       colors: {
         background: '#FFFFFF',
         text: '#48484c',
-        borderColor: '#0bbfb0',
-        colorScale: ['#9be8c7', '#7B91E8', '#D13E9D']
+        borderColor: '#870bbf',
+        colorScale: ['#f9dcff', '#ffaa07', '#7B91E8']
       }
     }
   },
@@ -110,7 +110,7 @@ export default {
     left: 55%;
     top: 35%;
     z-index: 2;
-    color: #0bbfb0;
+    color: #870bbf;
   }
 
   &.mobile {
@@ -221,7 +221,7 @@ export default {
 h2 {
   font-family: 'IBM Plex Mono', serif;
   font-weight: normal;
-  color: #0BBFB0;
+  color: #870bbf;
   font-size: 35px;
 }
 </style>

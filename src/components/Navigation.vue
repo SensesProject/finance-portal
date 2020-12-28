@@ -13,11 +13,12 @@
       </div>
       <div class="link">
         <a class="intro" href="#/intro"></a>
+        <a class="extreme-events" href="#/extreme-events"></a>
         <a class="emissions-gap" href="#/emissions-gap"></a>
         <a class="transition-risk" href="#/transition-risk"></a>
         <a class="power-sector" href="#/power-sector"></a>
         <a class="end-use" href="#/end-use"></a>
-        <a class="investment-opportunities" href="#/investment-opportunities"></a>
+        <a class="investment" href="#/investment-opportunities"></a>
         <!-- <a class="land-use" href="#/land-use"></a>
         <a class="extreme-events" href="#/extreme-events"></a> -->
         <a class="earth" href="#/earth"></a>
@@ -103,7 +104,7 @@ export default {
 .naviImage {
   position: absolute;
   top:70px;
-  left: 10px;
+  left: 0px;
   pointer-events: none;
 }
 
@@ -130,9 +131,14 @@ export default {
       left: 50px;
     }
 
+    &.extreme-events {
+      top: 60px;
+      left: 81px;
+    }
+
     &.earth {
       top: 90px;
-      left: 61px;
+      left: 81px;
     }
 
     &.emissions-gap {
@@ -142,32 +148,27 @@ export default {
 
     &.transition-risk {
       top: 190px;
-      left: 95px;
+      left: 110px;
     }
 
     &.power-sector {
       top: 205px;
-      left: 70px;
+      left: 90px;
     }
 
     &.end-use {
       top: 205px;
-      left: 45px;
+      left: 60px;
     }
 
-    &.investment-opportunities {
-      top: 260px;
-      left: 61px;
-    }
-
-    &.extreme-events {
+    &.investment {
       top: 260px;
       left: 81px;
     }
 
     &.end {
-      top: 355px;
-      left: 35px;
+      top: 365px;
+      left: 55px;
     }
 
   }
@@ -179,9 +180,14 @@ export default {
   left: 67px;
   transition: top 1s, left 1s;
 
+  .extreme-events & {
+    top: 60px;
+    left: 81px;
+  }
+
   .earth & {
     top: 90px;
-    left: 61px;
+    left: 81px;
   }
 
   .emissions-gap & {
@@ -191,32 +197,27 @@ export default {
 
   .transition-risk & {
     top: 190px;
-    left: 95px;
+    left: 110px;
   }
 
   .power-sector & {
     top: 205px;
-    left: 70px;
+    left: 90px;
   }
 
   .end-use & {
     top: 205px;
-    left: 45px;
+    left: 60px;
   }
 
-  .investment-opportunities & {
-    top: 260px;
-    left: 61px;
-  }
-
-  .extreme-events & {
+  .investment & {
     top: 260px;
     left: 81px;
   }
 
   .end & {
-    top: 355px;
-    left: 35px;
+    top: 365px;
+    left: 55px;
   }
 }
 

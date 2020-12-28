@@ -36,7 +36,7 @@
       <div class="content gems" v-if="data.gems">/ <a href="https://dev.climatescenarios.org/gems/#/">Explore GEMs</a></div>
     </div>
   </div>
-  <div class="otherportal" v-if="data.id === 'emissions-gap'">
+  <div class="otherportal" v-if="data.id === 'emissions-gap' || data.id === 'extreme-events'">
     <a href="/policy-portal/#emissions-gap">
       <p>&#10132;</p>
       <h3>Discover also in the Policy Portal</h3>
@@ -167,7 +167,7 @@ export default {
   text-align: right;
 
   .power-sector &,
-  .investment-opportunities &,
+  .investment &,
   .fossil-risks &,
   .end-use & {
     color: #9f3bcc;
@@ -195,14 +195,14 @@ export default {
     text-align: left;
   }
 
-  .investment-opportunities & {
+  .investment & {
     width: 300px;
     left: 70%;
   }
 }
 
 .container:hover {
-  &.emissions-gap {
+  &.emissions-gap, &.extreme-events {
     .circle {
       background:#e6fffe;
     }
@@ -236,6 +236,10 @@ export default {
     border: 2px solid #e6fffe;
     left: 47%;
     top: 43%;
+  }
+
+  .extreme-events & {
+    border: 2px solid #e6fffe;
   }
 
   .stocktake-2 & {
@@ -312,6 +316,12 @@ export default {
     }
   }
 
+  .extreme-events & {
+    h2 {
+      width: 550px;
+    }
+  }
+
   .end-use & {
     left: 35%;
     top: 30%;
@@ -323,7 +333,7 @@ export default {
     }
   }
 
-  .investment-opportunities & {
+  .investment & {
     left: 35%;
     top: 45%;
     h2 {
