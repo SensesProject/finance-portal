@@ -1,12 +1,9 @@
 <template>
   <div class="container" :class="{mobile}">
-    <!-- <Dot class="dot"/> -->
-    <!-- <div class="dot"></div> -->
     <div class="inner">
       <h1>
-        <a href="policy-portal" target="#/policy-portal">
+        <a href="/policy-portal">
         Continue on the Policy Portal. <br v-if="{mobile} === true"/>
-          <!-- <span class="right_arrow">→</span> -->
         </a>
       </h1>
     </div>
